@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@Table(name ="voucher")
+@Table(name="Voucher")
 @NoArgsConstructor
 @AllArgsConstructor
 public class Voucher {
@@ -15,8 +15,5 @@ public class Voucher {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String vouchercode;
-    private int voucherdiscount;
-    @OneToOne(mappedBy = "Voucher_id")
-    private Payment payment;
-
+    private String ammount;
 }

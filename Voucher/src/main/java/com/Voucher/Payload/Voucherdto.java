@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class Voucherdto {
+    private long id;
     private String vouchercode;
-    private int voucherdiscount;
+    private String ammount;
 }
